@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -16,37 +17,46 @@
     <nav aria-label="Navegación principal">
       <a href="#taller">Taller</a>
       <a href="#territorios">Territorios</a>
+      <a href="#proyectos">Proyectos</a>
       <a href="#cuaderno">Cuaderno</a>
     </nav>
+    <div class="header-symbol" aria-hidden="true"></div>
     <span class="place">Barcelona · Catalunya</span>
   </header>
 
+  <aside class="section-rail" aria-label="Recorrido de la página">
+    <a href="#taller" data-section-link><span>00</span>Taller</a>
+    <a href="#territorios" data-section-link><span>01</span>Territorios</a>
+    <a href="#proyectos" data-section-link><span>02</span>Proyectos</a>
+    <a href="#cuaderno" data-section-link><span>03</span>Cuaderno</a>
+  </aside>
+
   <main>
-    <section class="hero" id="taller" aria-labelledby="hero-title">
+    <section class="hero" id="taller" data-section aria-labelledby="hero-title">
       <div class="monogram" role="img" aria-label="Logotipo de Bredoa"></div>
-      <p class="eyebrow">Taller independiente · en proceso</p>
-      <h1 id="hero-title">Hacer<br>para seguir<br>aprendiendo.</h1>
-      <p class="intro">Bredoa es un lugar para dar forma a una idea, recuperar un objeto o entender una máquina un poco mejor que ayer.</p>
-      <a class="scroll-cue" href="#territorios">Explorar el taller <span aria-hidden="true">↓</span></a>
+      <p class="eyebrow reveal">Taller independiente · en proceso</p>
+      <h1 id="hero-title" class="reveal">Hacer<br>para seguir<br>aprendiendo.</h1>
+      <p class="intro reveal">Bredoa es un lugar para dar forma a una idea, recuperar un objeto o entender una máquina un poco mejor que ayer.</p>
+      <a class="scroll-cue reveal" href="#territorios">Explorar el taller <span aria-hidden="true">↓</span></a>
     </section>
 
-    <section class="territories" id="territorios" aria-labelledby="territories-title">
-      <div class="section-heading">
+    <section class="territories" id="territorios" data-section aria-labelledby="territories-title">
+      <div class="section-heading reveal">
         <p class="eyebrow">01 — Territorios</p>
         <h2 id="territories-title">No una especialidad.<br>Un hilo conductor.</h2>
       </div>
       <div class="territory-list">
-        <article>
+        <article class="reveal">
           <p class="index">01</p>
           <h3>Metal y máquinas</h3>
           <p>Herramientas, torno, precisión y mejoras que nacen del uso real.</p>
         </article>
-        <article>
+        <article class="reveal">
           <p class="index">02</p>
           <h3>Electrónica</h3>
           <p>Control, movimiento y pequeños sistemas que hacen algo útil.</p>
         </article>
-        <article>
+        <article class="reveal">
           <p class="index">03</p>
           <h3>Objetos con historia</h3>
           <p>Restaurar antes de sustituir; comprender antes de intervenir.</p>
@@ -54,13 +64,40 @@
       </div>
     </section>
 
-    <section class="notebook" id="cuaderno" aria-labelledby="notebook-title">
-      <p class="eyebrow">02 — Cuaderno de taller</p>
-      <div>
+    <section class="projects" id="proyectos" data-section aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 — En marcha</p>
+        <h2 id="projects-title">Taller, mesa<br>y cuaderno.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <p class="project-code">B-01</p>
+          <h3>Bredoa Helix</h3>
+          <p>Control electrónico de avance y roscado para el torno.</p>
+          <span>En desarrollo</span>
+        </article>
+        <article class="project-card reveal">
+          <p class="project-code">B-02</p>
+          <h3>OfiCut</h3>
+          <p>Lectura y control de precisión para una guillotina de taller.</p>
+          <span>En desarrollo</span>
+        </article>
+        <article class="project-card reveal">
+          <p class="project-code">B-03</p>
+          <h3>Máquinas con historia</h3>
+          <p>Diagnóstico, reparación y mejora de herramientas que aún tienen trabajo por hacer.</p>
+          <span>En proceso</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="notebook" id="cuaderno" data-section aria-labelledby="notebook-title">
+      <p class="eyebrow reveal">03 — Cuaderno de taller</p>
+      <div class="reveal">
         <h2 id="notebook-title">Proyectos en marcha,<br>errores incluidos.</h2>
         <p>El resultado importa, pero también el recorrido: pruebas, ajustes, piezas que no encajan a la primera y soluciones que terminan encontrando su forma.</p>
       </div>
-      <p class="status">Próximamente</p>
+      <p class="status reveal">Próximamente</p>
     </section>
   </main>
 
