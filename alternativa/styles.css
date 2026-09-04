@@ -16,9 +16,9 @@ body { margin: 0; color: var(--ink); font-family: Manrope, Arial, sans-serif; }
 .back { color: inherit; text-decoration: none; }
 .back:hover { color: var(--pink); }
 
-.masthead { min-height: 36vh; display: grid; grid-template-columns: minmax(0, 1fr) 11rem; align-items: center; gap: 2rem; padding: 3rem 0 2rem; border-bottom: 1px solid var(--line); }
+.masthead { min-height: 36vh; display: flex; align-items: center; justify-content: center; padding: 3rem 0 2rem; border-bottom: 1px solid var(--line); }
 .logo { display: block; width: min(590px, 100%); height: auto; }
-.stamp { align-self: end; color: var(--pink); font: .75rem/1.45 "DM Mono", monospace; text-transform: uppercase; }
+.stamp { display: none; }
 
 .statement { display: grid; grid-template-columns: 11rem minmax(0, 1fr); column-gap: 2rem; padding: 6rem 0 5rem; }
 .kicker { margin: .75rem 0; color: var(--pink); font: .75rem/1.3 "DM Mono", monospace; text-transform: uppercase; }
@@ -41,8 +41,7 @@ footer { display: flex; justify-content: space-between; padding: 1.8rem 0 2.7rem
   .topbar, main, footer { width: min(100% - 2rem, 1280px); }
   .topbar { grid-template-columns: 1fr auto; }
   .topbar span:nth-child(2) { display: none; }
-  .masthead { grid-template-columns: 1fr; min-height: 0; }
-  .stamp { display: none; }
+  .masthead { min-height: 0; }
   .statement { display: block; padding: 4rem 0; }
   .kicker { margin-bottom: 1.5rem; }
   .lead { margin-top: 2rem; }
