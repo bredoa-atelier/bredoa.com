@@ -1,4 +1,4 @@
-:root { --ink: #1c2f32; --paper: #f5f5f5; --cyan: #279ead; --magenta: #a93c6a; --brand-blue: #173b5f; }
+:root { --ink: #1c2f32; --paper: #f5f5f5; --cyan: #279ead; --magenta: #a93c6a; }
 * { box-sizing: border-box; }
 html { background: var(--ink); }
 body { margin: 0; color: var(--paper); background: var(--ink); font-family: Inter, Arial, sans-serif; }
@@ -9,10 +9,8 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .eyebrow, .number { color: var(--cyan); font-size: .76rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
 h1 { max-width: 760px; margin: .75rem 0 1.3rem; font: 500 clamp(2.7rem, 6.3vw, 6.4rem)/.98 Comfortaa, sans-serif; letter-spacing: -.07em; }
 .intro { max-width: 610px; color: #c8d4d5; font-size: clamp(1rem, 1.45vw, 1.24rem); line-height: 1.65; }
-.logo-lockup { color: var(--brand-blue); justify-self: end; width: min(360px, 80%); padding: 1.25rem; background: var(--paper); text-align: center; }
-.logo-lockup svg { width: 100%; display: block; fill: currentColor; }
-.logo-lockup .cutout { fill: var(--paper); }
-.logo-lockup span { display: block; margin-top: -1.8rem; font: 500 clamp(2.2rem, 5vw, 4.6rem)/1 Comfortaa, sans-serif; letter-spacing: -.1em; }
+.logo-lockup { justify-self: end; width: min(360px, 80%); padding: 1.25rem; background: var(--paper); }
+.logo-lockup img { display: block; width: 100%; height: auto; }
 .areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding: 4rem 0 5rem; }.areas article { border-top: 1px solid color-mix(in srgb, var(--paper) 25%, transparent); padding-top: 1rem; }
 h2 { margin: .55rem 0 .7rem; font: 500 1.45rem/1.2 Comfortaa, sans-serif; letter-spacing: -.04em; }.areas p { margin: 0; color: #bdc9ca; line-height: 1.6; }
 footer { display: flex; justify-content: space-between; gap: 2rem; border-top: 1px solid color-mix(in srgb, var(--paper) 20%, transparent); padding: 1.5rem 0 2.2rem; color: #bdc9ca; font-size: .9rem; } footer p { margin: 0; }.accent { color: var(--cyan); }
